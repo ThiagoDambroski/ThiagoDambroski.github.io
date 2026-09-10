@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Verdana', Times, serif;
+}
+
+header{
+    padding-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+header h1 {
+
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(0, 247, 0);
+}
+
+main{
+    padding:1rem;
+    background-color:white;
+    color:black;
+    border: 1px solid white;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+
+}
+main ul{
+    display: flex;
+}
+main ul li {
+    margin: 1rem;
+}
+main article{
+    justify-self:center;
+
+}
+
+main section p:last-child {
+    color:red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main img{
+    align-self: center;
+    justify-self: center;
+    width:40%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
