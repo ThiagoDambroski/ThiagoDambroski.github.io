@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color:white;
-    font-family: 'Verdana', Times, serif;
+    font-family: Verdana, Times, serif;
 }
 
 header{
@@ -9,15 +9,12 @@ header{
     display: flex;
     justify-content:center;
     align-items:center;
-
-
 }
 
 header h1 {
-
     text-transform: uppercase;
     font-style: italic;
-    color: rgb(0, 247, 0);
+    color: green;
 }
 
 main{
@@ -28,13 +25,11 @@ main{
     border-radius: 25px;
     display:flex;
     flex-direction: column;
-
 }
 
 main section{
     display: flex;
     flex-direction: column;
-
 }
 main ul{
     display: flex;
@@ -44,7 +39,6 @@ main ul li {
 }
 main article{
     justify-self:center;
-
 }
 
 main section p:last-child {
@@ -61,7 +55,6 @@ main img{
 
 footer{
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: small;
 }
