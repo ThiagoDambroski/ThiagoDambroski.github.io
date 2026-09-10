@@ -41,7 +41,7 @@ main article{
     justify-self:center;
 }
 
-main section p:last-child {
+.importantp {
     color:red;
     font-weight: bold;
     font-style: italic;
