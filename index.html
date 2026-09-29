@@ -8,33 +8,57 @@
   </head>
   <body>
     <header>
-      <h1>Primeira pagina web !</h1>
+      <p>Menu</p>
     </header>
-
     <main>
-      <section>
+      <section id="hero">
+        
         <article>
-          <p>
-            Na unidade curricular
-            <a href="https://moodle.ensinolusofona.pt/course/view.php?id=27320">
-              Desenvolvimento Web
-            </a>
+        
+          <h1>Transformando ideas em realidade</h1>
+          <p>Aprendemos a transformar conceitos e ideias em páginas web funcionais, organizadas e visualmente apelativas. Utilizando HTML e CSS, conseguimos estruturar o conteúdo de forma semântica e criar layouts responsivos com ferramentas como Flexbox e Grid, melhorando a experiência do utilizador em diferentes dispositivos.
           </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>REACT E NEXT</li>
-          </ul>
+           <nav>
+            <ul>
+              <li><a href="#hero" class="button-link">Hero</a></li>
+              <li><a href="#projetos" class="button-link">Projetos</a></li>
+              <li><a href="#diw" class="button-link">Diw</a></li>
+            </ul>
+           </nav>
+          
         </article>
-
-        <p class="importantp">Iremos criar solucoes criativas!</p>
-        <a href="/cidade/index.html">Cidade Project</a>
       </section>
-
-      <img src="imgs/image.svg" />
+      <section id="projetos">
+        <div>
+          <h1>Projetos / Labs</h1>
+          
+        </div>
+        <div>
+          <article onclick="window.location.href='./lab1/index.html'">
+           
+            <a href="./lab1//index.html">lab 1</a>
+          </article>
+          <article onclick="window.location.href='./lab2/index.html'">
+            <h2></h2>
+            <a href="./lab2/index.html">lab 2</a>
+          </article>
+          <article onclick="window.location.href='./lab3/index.html'">
+            <h2></h2>
+            <a href="./lab3/index.html">lab 3</a>
+          </article>
+        </div>
+        
+      </section>
+      <section  id="diw">
+        <p>
+          Aprendemos a criar a estrutura de um site de forma semântica, utilizando as tags que fazem mais sentido em termos de semântica e acessibilidade.
+          Também aprendemos a utilizar CSS de forma eficaz para transformar qualquer ideia em realidade, utilizando Grid, Flexbox e todos os mecanismos necessários para melhorar a visualização e a experiência do utilizador.
+        </p>
+      </section>
+    
     </main>
-
-    <footer>Universidade Lusofona &copy;2025</footer>
+    <footer>
+      <p>©</p>
+    footer>
   </body>
 </html>

@@ -1,0 +1,1 @@
+Pasta reservada para as 8 fotografias do Lab 2. Neste pacote, as imagens estão referenciadas por URL para manter o site funcional sem ficheiros externos.

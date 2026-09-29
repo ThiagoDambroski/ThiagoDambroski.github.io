@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px 12px;
+
+    h1 {
+        margin: 0;
+        font-family: "Arial Black", Arial, sans-serif;
+        font-size: 8vw;
+        font-weight: 900;
+        letter-spacing: -8px;
+
+        span:nth-child(1) {
+            color: #e8424f;
+        }
+
+        span:nth-child(2) {
+            color: #16b9d4;
+        }
+
+        span:nth-child(3) {
+            color: #000000;
+        }
+
+        span:nth-child(4) {
+            color: #3155c6;
+        }
+
+        span:nth-child(5) {
+            color: #a7c91d;
+        }
+
+        span:nth-child(6) {
+            color: #df3945;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+
+        a {
+            color: #111111;
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover {
+                color: #3155c6;
+            }
+        }
+    }
+}
+
+main {
+    width: 94%;
+    max-width: 1150px;
+    min-height: 60vh;
+    margin: 20px auto;
+    padding: 28px;
+    border-radius: 14px;
+}
+
+.main-home {
+    background: #e8f4f8;
+
+    h2 {
+        margin-top: 0;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .home-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 24px;
+
+        a {
+            position: relative;
+            min-height: 240px;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            span {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 14px;
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                background: rgba(0, 0, 0, 0.68);
+            }
+        }
+    }
+}
+
+.main-local {
+    background: #df394425;
+
+    h2 {
+        margin-top: 0;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .local-text {
+        max-width: 900px;
+        margin: 0 auto;
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+
+    .mapa-olinda {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+        margin: 24px auto;
+        border: 4px solid white;
+        border-radius: 18px;
+    }
+}
+
+.main-midia {
+    background: #cfe969;
+
+    h2 {
+        margin-top: 0;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .anchor-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 18px 0 28px;
+
+        a {
+            padding: 8px 12px;
+            color: #111111;
+            background: rgba(255, 255, 255, 0.72);
+            border-radius: 6px;
+        }
+    }
+
+    .multimedia-section {
+        margin-top: 32px;
+    }
+
+    .fotografias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+        }
+    }
+
+    .video-box {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.72);
+        border-radius: 12px;
+
+        a {
+            color: #3155c6;
+            font-weight: 700;
+        }
+    }
+
+    .poema {
+        width: 100%;
+        max-width: 620px;
+        padding: 22px;
+        background: rgba(255, 255, 255, 0.72);
+        border-radius: 12px;
+
+        p {
+            margin: 10px 0;
+
+            &:nth-child(odd) {
+                margin-left: 24px;
+                color: #3155c6;
+            }
+
+            &:nth-child(even) {
+                color: #df3945;
+            }
+        }
+    }
+}
+
+.info-main {
+    color: white;
+    background: #16b9d4;
+
+    h2 {
+        margin-top: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        text-align: center;
+    }
+
+    > p {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        max-width: 900px;
+        margin: 32px auto;
+        border-collapse: collapse;
+        background: white;
+        color: #111111;
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #111111;
+        }
+
+        th {
+            color: #3155c6;
+            background: #eef3ff;
+        }
+
+        td {
+            color: #333333;
+        }
+    }
+
+    .curiosidades {
+        width: 100%;
+        max-width: 850px;
+        margin: 24px auto 0;
+        padding: 22px;
+        color: #111111;
+        background: white;
+        border-radius: 12px;
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    header {
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        h1 {
+            font-size: 48px;
+            letter-spacing: -6px;
+        }
+
+        nav {
+            width: 100%;
+            flex-direction: column;
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    main {
+        width: 96%;
+        padding: 20px;
+    }
+
+    .main-home {
+        .home-links {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .main-local {
+        .mapa-olinda {
+            height: 340px;
+        }
+    }
+
+    .main-midia {
+        .fotografias {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .info-main {
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+}

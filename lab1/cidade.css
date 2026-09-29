@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: clamp(48px, 8vw, 80px);
+    font-weight: 900;
+    letter-spacing: -8px;
+}
+
+header h1 span:nth-child(1) { color: #e8424f; }
+header h1 span:nth-child(2) { color: #16b9d4; }
+header h1 span:nth-child(3) { color: #000000; }
+header h1 span:nth-child(4) { color: #3155c6; }
+header h1 span:nth-child(5) { color: #a7c91d; }
+header h1 span:nth-child(6) { color: #df3945; }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+nav a {
+    color: #111111;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3155c6;
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    min-height: 60vh;
+    margin: 20px auto;
+    padding: 28px;
+    border-radius: 14px;
+    background: #e8f4f8;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero-image,
+.page-image {
+    display: block;
+    width: min(100%, 700px);
+    max-height: 430px;
+    margin: 24px auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.home-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.home-links a {
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.home-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-links span {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.68);
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .home-links {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
